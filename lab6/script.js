@@ -3,7 +3,7 @@ function addfunction() {
     var btn = document.createElement("BUTTON");
     btn.innerHTML = `CLICK ME (${count})`;
     btn.setAttribute("id", "btn_" + count++);
-    btn.setAttribute("class", "btn btn_outline_danger");
+    btn.setAttribute("class", "btn btn-outline-danger");
     console.log(btn);
     document.body.appendChild(btn);
 };
