@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table { 
+            font-family: Arial, Helvetica, sans-serif; 
+            border-collapse: collapse; 
+            width: 100%; 
+            } 
+            td, th { 
+            border: 1px solid #ddd; 
+            padding: 6px; 
+            } 
+            tr:nth-child(even){background-color: #f2f2f2;} 
+            tr:hover {background-color: #ddd;} 
+            th { 
+            padding-top: 12px; 
+            padding-bottom: 12px; 
+            text-align: left; 
+            background-color: #04AA6D; 
+            color: white; 
+            }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>景點觀光展覽資料</h1>
+    <input type="text" id="searchInput" placeholder="搜尋..." oninput="searchTable()">
+    <table id="csie">
+        <tr>
+            <th>名稱</th> <th>地點</th> <th>票價</th>
+        </tr>
+    </table>
+    <div>
+        <button onclick="prevPage()">上一頁</button>
+        <span id="pageInfo"> 1 / 1 頁</span>
+        <button onclick="nextPage()">下一頁</button>
+    </div>
+</body>
+</html>
